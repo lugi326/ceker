@@ -24,7 +24,7 @@ const query = async (data, sessionId) => {
     const response = await fetch("https://flowisefrest.onrender.com/api/v1/prediction/e5d4a781-a3a5-4631-8cdd-3972b57bcba7", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ ...data, overrideConfig: { /data/sessionId } })
+      body: JSON.stringify({ ...data, overrideConfig: { sessionId } })
     });
     return await response.json();
   } catch (error) {
