@@ -4,7 +4,7 @@ const serviceAccount = require('./serviceAccountKey.json');
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  databaseURL: 'https://dbwa-658de-default-rtdb.asia-southeast1.firebasedatabase.app/' // Ganti dengan URL database Anda
+  databaseURL: 'https://wav1-e35d1-default-rtdb.asia-southeast1.firebasedatabase.app/' // Ganti dengan URL database Anda
 });
 
 const db = admin.database();
